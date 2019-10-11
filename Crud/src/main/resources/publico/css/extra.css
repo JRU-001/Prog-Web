@@ -1,0 +1,26 @@
+h1, h3{
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    align-items: flex-start;
+}
+
+#ver{
+    display: flex;
+    align-items: center;
+}
+#ver h6{
+    text-align: center;
+}
+#ver p{
+    text-indent: 40%;
+    text-align: center;
+}
+
+#registro{
+    align-items: center;
+    align-content: center;
+
+}

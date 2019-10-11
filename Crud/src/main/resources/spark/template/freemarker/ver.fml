@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es_do">
+<head>
+    <meta charset="UTF-8" />
+    <title>CRUD Web | Inspect</title>
+    <link href="/css/font-awesome-4.7.0/css/font-awesome.css" type="text/css" rel="stylesheet" />
+    <link href="/css/bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/extra.css" rel="stylesheet" type="text/css"/>
+</head><i class="fa fa-envelope-open-o" aria-hidden="true"></i>
+<body>
+<header>
+    <h1 class="h1">Prueba CRUD Local</h1>
+</header>
+<nav class="navbar navbar-light bg-light">
+    <a class="nav-item" href="/">Inicio</a>
+    <a class="nav-item" href="/create">Nuevo Estudiante</a>
+    <a class="nav-item" href="/update/${estudiante.matricula?string["0"]}">Modificar</a>
+    <form method="POST" action="/delete/${estudiante.matricula?string["0"]}">
+        <button type="submit" class="nav-item" id="submit" style="background: none; padding: 0px; border: none; color: #007bff;">
+            Borrar estudiante
+        </button>
+    </form>
+
+</nav>
+<main class="ver">
+    <h3>
+        Ver estudiante
+    </h3>
+    <h6>Nombre</h6>
+    <p>
+        ${estudiante.nombre}
+    </p>
+    <h6>Apellido</h6>
+    <p>
+        ${estudiante.apellido}
+    </p>
+    <h6>Matricula</h6>
+    <p>
+        ${estudiante.matricula?string["0"]}
+    </p>
+    <h6>Telefono</h6>
+    <p>
+        ${estudiante.telefono}
+    </p>
+
+
+
+</main>
+</body>
+</html>
